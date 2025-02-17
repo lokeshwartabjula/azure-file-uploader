@@ -3,6 +3,7 @@ import { useDropzone } from 'react-dropzone'
 import { BlobServiceClient } from '@azure/storage-blob'
 import viteLogo from '/vite.svg'
 import reactLogo from './assets/react.svg'
+import githubLogo from './assets/github-mark-white.svg'
 import './App.css'
 
 function App() {
@@ -57,7 +58,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Azure Blob File Uploader</h1>
+      <h1>Loki's Azure Blob File Uploader</h1>
       <div className="card">
         <input
           type="text"
@@ -68,7 +69,7 @@ function App() {
         />
         <input
           type="text"
-          placeholder="Enter your container name"
+          placeholder="Enter your folder name"
           value={containerName}
           onChange={(e) => setContainerName(e.target.value)}
           style={{ width: '100%', padding: '8px', marginBottom: '10px' }}
@@ -78,7 +79,10 @@ function App() {
           {uploading ? 'Uploading...' : 'Upload Files'}
         </button>
       </div>
-      <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
+      <p className="read-the-docs">Visit for more such apps from my github profile</p>
+      <a href="https://github.com/lokeshwartabjula" target="_blank">
+          <img src={githubLogo} className="logo" alt="React logo" />
+        </a>
     </>
   )
 }
